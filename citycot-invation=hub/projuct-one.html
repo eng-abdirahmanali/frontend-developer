@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman';
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(235, 236, 236);
+            max-height: 100vh;
+            width: 100%;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        h1 {
+            background-color: green;
+            color: white;
+            padding: .3em;
+            width: 100%;
+            text-align: center;
+        }
+        .nav {
+            flex-direction: column;
+            background: #323232;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .nav ul{
+            list-style: none;
+            height: 100%;
+            display: flex;
+
+        }
+        .nav  a {
+            display: flex;
+            padding: .5em;
+            color: white;
+            margin-left: 30px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.25rem;
+            text-transform: capitalize;
+            font-weight: 400;
+            
+        }
+        .section {
+
+            text-transform: capitalize;
+            margin: 0 7em;
+            margin-top: .3em;
+        }
+        .img {
+            width: 50px;
+        }
+        .section1 {
+text-align: center;
+justify-content: center;
+        }
+        .section2  {
+            justify-content: start;
+        }
+        .section2 h2 {
+margin-bottom: .4em;
+        }
+       .section2 table {
+        
+       
+            width: 100%;
+        }
+        .section2 th {
+            padding: .5em;
+            color: white;
+            background-color: green;
+            border: none;
+        }
+        .section2 tr  , td{
+            padding: .5em;
+            border: 1px solid rgb(252, 252, 252);
+        }
+        .section3 {
+           text-align: center;
+        }
+        span {
+            font-weight: bold;
+        }
+        .section3 h2 {
+            margin-top: 1em;
+        }
+        .section3 img {
+            width: 100px;
+            
+
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3,  auto);
+            gap: 15px;  
+            transition: .3s ease-in-out;
+        }
+        .gridtample {
+            background-color: white;
+            border-radius: .3em;
+            text-align: center;
+            align-items: center;
+            margin-top: 1em;
+            padding: 1em;
+        }
+        .gridtample img {
+            width: 70px;
+        }
+        .gridtample h3 , p {
+            padding-top: .4em;
+        }
+        .form {
+            margin-top: 1em;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .form label {
+            margin:  .3em 0;
+        }
+        .form input , textarea{
+            padding: .3em;
+            border-radius: .3em;
+            border: 1px solid gray;
+            outline: none;
+
+        }
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            margin: .5em 0;
+            font-size: 1em;
+            border-radius: .3em;
+            padding: .5em;
+            margin-bottom: 2em;
+        }
+        .section4 {
+            margin-top: 0;
+        }
+        .close , .open {
+            display: none;
+        }
+        #checkbox {
+            display: none;
+        }
+        @media (max-width:900px) {
+            .section {
+                margin: 1em;
+
+            }
+            .section3 {
+                text-align: center;
+            }
+            .grid {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(3, auto);
+                justify-content: center;
+                margin: 0;
+            }
+            .link-active {
+                position: fixed;
+                z-index: 10;
+                background-color: #3232328f;
+                width: 200px;
+                height: 100%;
+                top: 57px;
+                right: -100%;
+                transition: .75s ease-out;
+                align-items: self-start;
+                backdrop-filter: blur(10px);
+            }
+            ul {
+                flex-direction: column;
+                align-items: start;
+            }
+            .nav a  {
+                box-sizing: border-box;
+                height: auto;
+                
+                
+            }
+            
+            .close , .open {
+                display: block;
+                padding: 0 30px;
+
+            }
+            #checkbox:checked ~ .link-active {
+                right: 0;
+            }
+            
+            .open {
+                align-self:end ;
+            }
+            #checkbox:checked ~ #overlay {
+                height: 100vh;
+                width: 100%;
+                position: fixed;
+                z-index: 9;
+                top: 0;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        @media (max-width:318px){
+            h1 {
+                font-size: 1.5em;
+            }
+            table {
+               padding: 0;
+            }
+            .section2 th , tr , td{
+                padding: 0;
+            }
+         
+        }
+        
+         svg {
+            fill: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>html learning projuct</h1>
+        <nav class="nav">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="open">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000"><path d="M84.65-212.91v-113.18h790.7v113.18H84.65Zm0-211.26v-113.18h790.7v113.18H84.65Zm0-211.5v-113.18h790.7v113.18H84.65Z"/></svg>
+            </label>
+            <label for="checkbox" id="overlay"></label>
+            <div class="link-active">
+                <label for="checkbox" class="close">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000"><path d="m253.13-166.39-85.3-86.74L393.7-480 167.83-707.74l85.3-87.3 227.3 227.74 226.44-227.74 85.3 87.3L566.3-480l225.87 226.87-85.3 86.74-226.44-227.74-227.3 227.74Z"/></svg>
+                </label>
+                <ul>
+              </li>  <a href="#">about</a></li>
+              </li> <a href="#">projuct</a></li>
+              </li> <a href="#">testmonials</a></li>
+            </li> <a href="#">contuct</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+        <section class="section section1">
+            <h2>about this projuct</h2>
+            <p>this projects helps students learn HTML and CSS basics by building a functional webpage
+            </p>
+            <img class="img" src="Capture.PNG" alt="">
+        </section>
+        <section  class="section section2">
+            <h2>projuct list</h2>
+            <table >
+                <tr>
+                    <th>projuct name</th>
+                    <th>description</th>
+                    <th>status</th>
+                </tr><tr>
+                    <td>portfolio website</td>
+                    <td>showcase your projucts and skills</td>
+                    <td>completed</td>
+                </tr>
+                <tr>
+                    <td>personal blog</td>
+                    <td>asimple blogging platform</td>
+                    <td>in progress</td>
+                </tr>
+            </table>
+        </section>
+        <section  class="section section3">
+            <h2 class="p">testmonials</h2>
+           <p class="p"><span>challenge:</span> recreate this grid layout of testimonials using html ans css</p>
+            <div class="grid">
+                <div class="gridtample">
+                    <img src="Capture.PNG" alt="">
+                    <h3>reviewer one</h3>
+                     <p>"this project taught me a lot about htmland css. I feel much more confident now!</p>
+                </div>
+                <div class="gridtample">
+                    <img src="Capture.PNG" alt="">
+                    <h3>reviewer one</h3>
+                     <p>"this project taught me a lot about htmland css. I feel much more confident now!</p>
+                </div>
+                <div class="gridtample">
+                    <img src="Capture.PNG" alt="">
+                    <h3>reviewer one</h3>
+                     <p>"this project taught me a lot about htmland css. I feel much more confident now!</p>
+                </div>
+            </div>
+        </section>
+        <section  class="section section4">
+            <h2>contuct me </h2>
+            <form action="#" class="form">
+            <label for="name">name</label>
+            <input type="text"><br>
+            <label for="Email">Email</label>
+            <input type="email"><br>
+            <label for="massege">massege</label>
+            <textarea name="massege" id="massege"></textarea>
+            <button type="submit">send</button>
+        </form>
+
+        </section>
+  
+</body>
+</html>
