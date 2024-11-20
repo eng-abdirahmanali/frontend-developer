@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+.nav span {
+    font-size: 1.5rem;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+.nav a {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.section {
+    text-align: center;
+    color: gray;
+}
+.section h1 {
+    text-transform: capitalize;
+    font-family: "Caveat", cursive;
+    font-size: 3rem;
+    color: black;
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: 200px  1fr  1fr;
+    grid-template-rows: auto;
+    margin-top: 2em;
+
+}
+.grid-item {
+    border: 1px solid;
+    display: grid;
+    border-top: 1px solid ;
+}
+.grid2 {
+    display: grid;
+    grid-template-rows: 1fr 30px 30px 30px 1fr;
+    
+}
+.grid-item1 {
+    border: 1px solid;
+    padding: 5px 15px;
+    border-right: none;
+}
+.grid-item1 p {
+    padding-top: 15px;
+}
+.es {
+    padding: 15px 15px;
+}
+.grid3 {
+    padding: 10px;
+    border: 1px solid;
+    padding-right: none;
+    border-right: none;
+}
+h3 {
+    font-family: "Caveat", cursive;
+    font-size:1.8rem;
+    padding: 10px;
+}
+ul {
+    padding: 15px 20px;
+}
+.grid3 p {
+    padding-top: 10px;
+}
+.grid3 a {
+ color: rgb(71, 227, 241);
+ text-decoration: none;
+}
+.as {
+    padding-top: 15px;
+    margin-top: .5em;
+}
+.grid-item4 {
+    padding: 15px;
+    border: 2px solid;
+}
+.span {
+    padding-top: 15px;
+}
+.section4{
+    margin: 2em;
+}
+.grid5{
+    display: grid;
+    grid-template-columns: repeat(3 ,400px);
+    justify-content: space-around;
+    gap: 60px;
+    grid-template-rows: 200px;
+    margin-top: 1em;
+   
+}
+.grid5-item{
+    padding-top: 30px;
+    border-radius: 60px;
+    border: 2px solid black;
+    padding-left:  40px;
+    text-align: start;
+    font-size: 1.3em;
+
+
+}
+.grid5-item p:last-child {
+    color: gray;
+    padding-top: 20px;
+    font-size: 1em;
+}
+footer {
+    font-family: "Caveat", cursive;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.5em;
+}
+@media (max-width:850px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3 , 1fr);
+        margin-top: 2em; 
+    }
+
+}
+@media (max-width:1400px){
+    .grid5 {
+        display: grid;
+    grid-template-columns:400px 400px;
+    justify-content: center;
+    gap: 60px;
+    grid-template-rows: repeat(2 , 200px);
+    justify-content: center;
+    }
+    .grid5-item {
+        justify-content: center;
+
+    }
+    .grid5-item:last-child {
+        
+    }
+}
+@media (max-width:850px) {
+    .grid5 {
+        display: grid;
+    grid-template-columns:1fr;
+    justify-content: center;
+    gap: 60px;
+    grid-template-rows: repeat(3 , 200px);
+    justify-content: center;
+    }
+    .grid5-item {
+        justify-content: center;
+
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <span>xallaali</span>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li>/</li>
+            <li><a href="#">projects </a></li>
+            <li>/</li>
+            <li><a href="#">articles </a></li>
+            <li>/</li>
+            <li><a href="#">contuct</a></li>
+        </ul>
+    </nav>
+        <section class="section">
+        <h1>frontend developer</h1>
+        <p>html only with proper layout, no style</p>
+    </section>
+    <section>
+    <div class="grid">
+        <div class="grid-item">
+           <div class="grid2">
+            <div class="grid-item1 es">
+                <h3>projects</h3>
+                <p >html only portfolio</p>
+            </div>
+            <div  class="grid-item1">
+                calculator
+            </div  class="grid-item1">
+            <div  class="grid-item1">Quiz App</div>
+            <div  class="grid-item1">countdown timer</div>
+            <div  class="grid-item1 " >product upcoming page</div>
+        </div>
+        </div>
+        <div class="grid-item ">
+                <div class="grid3">
+                    <h3>Work Experience</h3>
+                    <p>roadmap.sh</p>
+                    <p>Solved all the frontend projects</p>
+                    <p class="as"><a href="#">Visit my Profile</a></p>
+                </div>
+                <div class="grid3 ">
+                   <h3>OpenSource Work</h3>
+                   <p>Contributed to 50 opensource <br>projects. Made my own projects with <br> 200 GitHub Stars.</p>
+                  <p class="as"> <a href="#" >Visit my GitHub Profile</a></p>
+                </div>
+        </div>
+        <div class="grid-item grid-item4">
+            <h3>education</h3>
+            <p>Graduated with 3.76 out of 4 <br> CGPA. Won Acme Hackathon. <br> Organized 30 sessions.</p>
+            <span class="span">Courses I took:</span>
+            <ul >
+                <li>Object Oriented Programming
+                   <li>Data Structures and Algorithms</li>
+                   <li>Web Engineering</li>
+                   <li>Artificial Intelligence</li>
+                   <li>Human Computer Interaction</li>
+                   <li>Computer Graphics</li>
+                   <li>Database Management Systems</li>
+                   <li>Distributed Database Systems</li>
+                   <li>Discreet Mathematics</li>
+            </ul>
+        </div>
+        
+    </div>
+</section>
+<section class="section4">
+    <h3>Reviews from my Teachers</h3>
+    <div class="grid5">
+        <div class="grid5-item">
+            <p>John doe was a brilliant <br> student; always stood out <br> with his assignments.</p>
+            <p >Jane Doe <br> Assistant Professor</p>
+        </div>
+        <div class="grid5-item">
+            <p>John doe was a brilliant <br> student; always stood out <br> with his assignments.</p>
+            <p>Jane Doe <br>Assistant Professor</p>
+        </div >
+        <div class="grid5-item">
+            <p>John doe was a brilliant <br> student; always stood out <br> with his assignments.</p>
+            <p>Jane Doe <br> Assistant Professor</p>
+        </div>
+    </div>
+</section>
+    <footer>
+        <nav>
+            © all rights reserved 2025
+    </nav>
+    </footer>
+</body>
+</html>
