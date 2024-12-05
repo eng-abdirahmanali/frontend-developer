@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>university website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+<section class="sub-header">
+    <nav>
+        <a href="index2.html"><img src=""></a>
+        <div class="nav-link" id="navlink">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <LI><a href="index2.html">home</a></LI>
+                <LI><a href="about.html.html">about</a></LI>
+                <LI><a href="course.html">course</a></LI>
+                <LI><a href="blog.html">blog</a></LI>
+                <LI><a href="contuct.html">contact</a></LI>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()" ></i>
+    </nav>
+    <h1>Contuct us</h1>
+    
+</section>
+    <!----contuct us-->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31303.01032251803!2d49.16212278965737!3d11.27050312875631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d96918aac9aa7f3%3A0x6e8f68a7e697e656!2sBosaso!5e0!3m2!1sen!2sso!4v1708890485744!5m2!1sen!2sso" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contuct-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>xyz road, abc BUIL</h5>
+                        <P>AFAR IRIDOOD, HORTEEDA</P>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+252 907830945</h5>
+                        <P>monday to saurday, 10AM to 6PM</P>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+
+                    <span>
+                        <h5>info@xallaali.com</h5>
+                        <P>Email us your query</P>
+                    </span>
+                </div>
+               
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="enter your name" required>
+                    <input type="text" placeholder="enter email address" required>
+                    <input type="text" placeholder="enter your subject" required>
+                    <textarea rows="8" placeholder="message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">send message</button>
+                </form> 
+            </div>
+        </div>
+       
+    </section>
+<!--footer-->
+<section class="footer">
+    <h4>About us</h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Doloribus aliquam quas hic quod, ex nam modi quibusdam accusamus natus, 
+        <br>tempora dignissimos pariatur voluptas recusandae rem sit dolore reiciendis dolores iusto?</p>
+    <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-snapchat"></i>
+        <i class="fa fa-youtube"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+    <p>made with <i class="fa fa-heart-o"> </i> by xallaali</p>
+    
+
+
+
+
+
+
+
+
+
+
+<!-----java script for teggle menu---->
+<script>
+    var navlink=document.getElementById("navlink");
+    function showmenu(){
+        navlink .style.right="0";
+    }
+    function hidemenu(){
+        navlink .style.right="-200px";
+    }
+
+</script>
+
+    </body>
+</html>
