@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cali{
+    padding-bottom:10%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30,0.7 ),rgba(4, 9, 30,0.7 )),url(../img/istockphoto-1386452720-612x612.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.m{
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(4, 9, 30,0.7 ),rgba(4, 9, 30,0.7 )),url(../img/s.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.saciid{
+    padding-bottom:20%;
+    min-height: 50vh;
+    background-image: linear-gradient(rgba(4, 9, 30,0.7 ),rgba(4, 9, 30,0.7 )),url(../img/a.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.s li:hover{
+color: red;
+}
+.k{
+   margin-top: 10%;
+   margin-left: 30%;
+   margin-bottom: 10%;
+    width: 15%;
+}
+.r a{
+    text-decoration: none;
+
+}
+.l{
+    margin-top: 8%;
+    margin-left: 40%;
+     width: 15%;
+ }
