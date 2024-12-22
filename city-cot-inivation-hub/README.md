@@ -21,23 +21,13 @@ A simple webpage that includes:
 [Click here to view Project 3](https://github.com/eng-abdirahmanali/frontend-developer/tree/main/city-cot-inivation-hub/project-three)
 
 ### Project 4:
-A dashboard school webpage that contains 
-- Fucalty
-- Student
--  Bill .
+A dashboard school webpage that contains Fucalty , Student and Bill .
 that uses HTML , Bootstrab and CSS.
 [Click here to view Project 4](https://github.com/eng-abdirahmanali/frontend-developer/tree/main/city-cot-inivation-hub/project-four)
 
 ### Project 5:
-A dashboard  Related to hosbital webpage that contains
-- doctors
-- donors
-- patient
-- patientlist
-- profile
-- reciever
-- login
-.that uses HTML , Bootstrab and CSS.
+A dashboard  Related to hosbital webpage that contains doctors , donors , patient , patientlist , profile , reciever and login.
+that uses HTML , Bootstrab and CSS.
 [Click here to view Project 5](https://github.com/eng-abdirahmanali/frontend-developer/tree/main/city-cot-inivation-hub/project-five)
 
 ---
