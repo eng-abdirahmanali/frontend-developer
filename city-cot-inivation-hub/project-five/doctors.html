@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+        font-family:'Times New Roman', Times, serif;
+    }
+</style>
+</head>
+
+<body>
+     
+         
+
+            <!-- Doctor Registration Form -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="card m-3">
+                        <div class="card-header bg-danger text-light">
+                            <div class="card-title farta ">
+                                Add New Doctor
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <!-- fullname,email,title -->
+                            <div class="row">
+                                <div class="col-md-4 g-3 mb-4 mt-0">
+                                    <div>
+                                        <label for="fullname" class="mb-2">Fullname</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fa fa-user text-danger" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" placeholder="Enter fullname" id="fullname">
+                                        </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 g-3 mb-4 mt-0">
+                                    <div>
+                                    <label for="Email" class="mb-2">Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fa fa-envelope text-danger" aria-hidden="true"></i></span>
+                                        <input type="email" class="form-control" placeholder="Enter Email" id="Email">
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 g-3 mb-4 mt-0">
+                                    <div>
+                                        <label for="Title" class="mb-2">Title</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fa fa-archive text-danger" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" placeholder="Enter Title" id="Title">
+                                        </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- Depertment,Experiance,contuctnumper -->
+                            <div class="row">
+                                <div class="col-md-4 g-3 mb-4 mt-0">
+                                    <div>
+                                        <label for="Department" class="mb-2">Department</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fa fa-building text-danger" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" placeholder="Cardiology" id="Department">
+                                        </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 g-3 mb-4 mt-0">
+                                    <div>
+                                        <label for="Experiance" class="mb-2">Experiance</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fa fa-calendar text-danger" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" placeholder="Enter Experiance in Year" id="Experiance">
+                                        </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 g-3 mb-4 mt-0">
+                                    <div>
+                                    <label for="Contuct Number" class="mb-2">Contuct Number</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fa fa-phone text-danger" aria-hidden="true"></i></span>
+                                        <input type="text" class="form-control" placeholder="Contuct Number" id="Contuct Number">
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Degree,Fees,profilephoto -->
+                            <div class="row">
+                                <div class="col-md-4 g-3 mb-4 mt-0">
+                                    <div>
+                                        <label for="Degree" class="mb-2">Degree</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fa fa-graduation-cap text-danger" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" placeholder="Enter Degree" id="Degree">
+                                        </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 g-3 mb-4 mt-0">
+                                    <div>
+                                        <label for="Fees" class="mb-2">Fees</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fa fa-usd text-danger" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" placeholder="Enter Fees" id="Fees">
+                                        </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 g-3 mb-4 mt-0">
+                                    <div>
+                                    <label for="Photo" class="mb-2">Profile Photo</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fa fa-camera text-danger" aria-hidden="true"></i></span>
+                                        <input type="file" class="form-control" placeholder="photo" id="Photo">
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- buttons -->
+                            <div class="row">
+                                <div class="col-md-3 mt-3 g-3">
+                                    <button type="button" class="btn btn-success w-100">save <i class="fas fa-save"></i></button>
+                                </div>
+                                <div class="col-md-3 mt-3 g-3">
+                                    <button type="button" class="btn btn-danger w-100">Delete <i class="fa fa-trash"></i></button>
+                                </div>
+                                <div class="col-md-3 mt-3 g-3">
+                                    <button type="button" class="btn btn-warning w-100">update <i class="fas fa-pen"></i></button>
+                                </div>
+                                <div class="col-md-3 mt-3 g-3">
+                                    <button type="button" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                     <!-- table -->
+                     <div class="card m-3">
+                        <div class="card-header bg-danger text-light">
+                            <div class="card-title ">
+                                List of Doctor
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped table-danger">
+                                <thead>
+                                    <tr>
+                                      <th >#</th>
+                                      <th>Name</th>
+                                      <th>Email</th>
+                                      <th>Title</th>
+                                      <th>Depertment</th>
+                                      <th>Experiance</th>
+                                      <th>Contuct</th>
+                                      <th>Fees</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th>1</th>
+                                      <td>cabdiraxmaan cali axmed</td>
+                                      <td>acbdi125@gmail.com</td>
+                                      <td>Cardiologist</td>
+                                      <td>Cardiology</td>
+                                      <td>10</td>
+                                      <td>342-2343-344</td>
+                                      <td>$100</td>
+                                    </tr>
+                                    <tr>
+                                      <th>2</th>
+                                      <td>cabdilahi cali axmed</td>
+                                      <td>saciid@gmail.com</td>
+                                      <td>neurologist</td>
+                                      <td>neurology</td>
+                                      <td>30</td>
+                                      <td>75-432-686</td>
+                                      <td>$150</td>
+                                    </tr>
+                                  </tbody>
+                              </table>
+                        </div>
+                        </div>
+                </div>
+             </div>
+           
+         
+    
+</body>
+
+</html>

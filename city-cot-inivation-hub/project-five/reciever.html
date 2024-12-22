@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Request</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            font-family:'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="card m-3">
+                <div class="card-header bg-danger text-light">
+                    <div class="card-title ">
+                       Blood Request Form
+                    </div>
+                </div>
+                <div class="card-body">
+                    <!-- fullname,email,title -->
+                    <div class="row">
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                                <label for="fullname" class="mb-2">Fullname</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa fa-user text-danger" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter fullname" id="fullname">
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                            <label for="Email" class="mb-2">Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa fa-envelope text-danger" aria-hidden="true"></i></span>
+                                <input type="email" class="form-control" placeholder="Enter Email" id="Email">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                            <label for="Contuct Number" class="mb-2">Phone Number</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa fa-phone text-danger" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Phone Number" id="Contuct Number">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Depertment,Experiance,contuctnumper -->
+                    <div class="row">
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                                <label for="Region" class="mb-2">Region</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Region" id="Region">
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                                <label for="Town" class="mb-2">Town</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa fa-building text-danger" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Town" id="Town">
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                                <label for="Village" class="mb-2">Village</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa fa-university text-danger" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Village" id="Village">
+                                </div>
+                                </div>
+                        </div>
+                       
+                    </div>
+                    <!-- Degree,Fees,profilephoto -->
+                    <div class="row">
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                                <label for="blood" class="mb-2">Blood Groop</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa fa-tint text-danger" aria-hidden="true"></i></span>
+                                    <select name="Blood" id="blood" class="form-select">
+                                        <option value="A+">A+</option>
+                                        <option value="A+">A-</option>
+                                        <option value="A+">B+</option>
+                                        <option value="A+">B-</option>
+                                        <option value="A+">O+</option>
+                                        <option value="A+">O-</option>
+                                        <option value="A+">AB+</option>
+                                        <option value="A+">AB-</option>
+                                    </select>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- buttons -->
+                    <div class="row">
+                        <div class="col-md-3 mt-3 g-3">
+                            <button type="submit" class="btn btn-success w-100">Request <i class="fas fa-paper-plane"></i></button>
+                        </div>
+                        <div class="col-md-3 mt-3 g-3">
+                            <button type="reset" class="btn btn-danger w-100">Reset <i class="fa fa-repeat"></i></button>
+                        </div>
+                        <div class="col-md-3 mt-3 g-3">
+                            <button type="submit" class="btn btn-warning w-100">update <i class="fas fa-pen"></i></button>
+                        </div>
+                        <div class="col-md-3 mt-3 g-3">
+                            <button type="submit" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+                        </div>
+                     </div>
+                </div>
+            </div>
+             <!-- table -->
+             <div class="card m-3">
+                <div class="card-header bg-danger text-light">
+                    <div class="card-title ">
+                        List of Doctor
+                    </div>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped table-danger">
+                        <thead>
+                            <tr>
+                              <th >#</th>
+                              <th>Name</th>
+                              <th>Email</th>
+                              <th>Phone</th>
+                              <th>Region</th>
+                              <th>Town</th>
+                              <th>Village</th>
+                              <th>Blood Type</th>
+                              <th>status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>1</th>
+                              <td>cabdiraxmaan cali axmed</td>
+                              <td>acbdi125@gmail.com</td>
+                              <td>090-783638</td>
+                              <td>Bari</td>
+                              <td>Carmo</td>
+                              <td>Daruraha</td>
+                              <td>AB+</td>
+                              <td>Acceppted</td>
+                            </tr>
+                            <tr>
+                              <th>2</th>
+                              <td>cabdiraxmaan maxamed saciid</td>
+                              <td>cabdiraxman@gmail.com</td>
+                              <td>090-86855-09</td>
+                              <td>waqooyi galbeed</td>
+                              <td>hargaysa</td>
+                              <td>shalumaray</td>
+                              <td>O+</td>
+                              <td>Rejected</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>cabdiraxmaan salaad  dube</td>
+                                <td>acbdi125@gmail.com</td>
+                                <td>090-783638</td>
+                                <td>nugaal</td>
+                                <td>garowe</td>
+                                <td>fakatax</td>
+                                <td>B-</td>
+                                <td>Waiting</td>
+                              </tr>
+                              <tr>
+                                <th>4</th>
+                                <td>jabra  cali jabra</td>
+                                <td>jabra@gmail.com</td>
+                                <td>090-98-78</td>
+                                <td>banadir </td>
+                                <td>muqdisho</td>
+                                <td>wardhiigley</td>
+                                <td>O-</td>
+                                <td>Acceppted</td>
+                              </tr>
+                              <tr>
+                                <th>5</th>
+                                <td>cabdiraxmaan saciid axmed</td>
+                                <td>faraxcali@gmail.com</td>
+                                <td>090-87967</td>
+                                <td>haylaan</td>
+                                <td>dhahar</td>
+                                <td>boorley</td>
+                                <td>A-</td>
+                                <td>Rejected</td>
+                              </tr>
+                              <tr>
+                                <th>6</th>
+                                <td>axmed cali axmed</td>
+                                <td>axmed@gmail.com</td>
+                                <td>090-6959876</td>
+                                <td>bari</td>
+                                <td>bosaso</td>
+                                <td>galodibuguro</td>
+                                <td>B+</td>
+                                <td>Acceppted</td>
+                              </tr>
+                              <tr>
+                                <th>7</th>
+                                <td>saciid warfaa axmed</td>
+                                <td>warfaa@gmail.com</td>
+                                <td>090-764933</td>
+                                <td>Bari</td>
+                                <td>Carmo</td>
+                                <td>taqwa</td>
+                                <td>A+</td>
+                                <td>Waiting</td>
+                              </tr>
+                              <tr>
+                                <th>8</th>
+                                <td>zakeriye cabdirashiid axmed</td>
+                                <td>acbdi125@gmail.com</td>
+                                <td>090-783638</td>
+                                <td>Bari</td>
+                                <td>Carmo</td>
+                                <td>waaberi</td>
+                                <td>O-</td>
+                                <td>Waiting</td>
+                              </tr>
+                              <tr>
+                                <th>9</th>
+                                <td>cali axmed maxamed</td>
+                                <td>cali@gmail.com</td>
+                                <td>090-783638</td>
+                                <td>muqdisho</td>
+                                <td>kaxda</td>
+                                <td>luuqluuq</td>
+                                <td>B-</td>
+                                <td>Rejected</td>
+                              </tr>
+                              <tr>
+                                <th>10</th>
+                                <td>maxamed salad</td>
+                                <td>maxamed@gmail.com</td>
+                                <td>090-783638</td>
+                                <td>Bari</td>
+                                <td>qardho</td>
+                                <td>taqwa</td>
+                                <td>A-</td>
+                                <td>Acceppted</td>
+                              </tr>
+                              <tr>
+                                <th>11</th>
+                                <td>saciido farax axmed</td>
+                                <td>saciid@gmail.com</td>
+                                <td>090-463265</td>
+                                <td>Bari</td>
+                                <td>Carmo</td>
+                                <td>huda</td>
+                                <td>B+</td>
+                                <td>Waiting</td>
+                              </tr>
+                              <tr>
+                                <th>12</th>
+                                <td>maxamed  axmed cali </td>
+                                <td>maxamed@gmail.com</td>
+                                <td>090-659342</td>
+                                <td>sanaag</td>
+                                <td>baran</td>
+                                <td>aqsaa</td>
+                                <td>A+</td>
+                                <td>Acceppted</td>
+                              </tr>
+                              <tr>
+                                <th>13</th>
+                                <td>faarxa maxamed axmed</td>
+                                <td>cadbi@gmail.com</td>
+                                <td>090-78686</td>
+                                <td>Bari</td>
+                                <td>bosaso</td>
+                                <td>afaridoood</td>
+                                <td>AB+</td>
+                                <td>Acceppted</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                </div>
+                </div>
+        </div>
+     </div>
+</body>
+
+</html>

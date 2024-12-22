@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            font-family:'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="card m-3">
+                <div class="card-header bg-danger text-light">
+                    <div class="card-title ">
+                        Patient Basic Infirmation
+                    </div>
+                </div>
+                <div class="card-body">
+                    <!-- fullname,lastname,gander -->
+                    <div class="row">
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                                <label for="fullname" class="mb-2">Fullname*</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa fa-user text-danger" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter fullname" id="fullname">
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                            <label for="LastName" class="mb-2">LastName*</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa fa-user text-danger" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter LastName" id="LastName">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                        <div>
+                            <label for="Gender" class="mb-2">Gender*</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa fa-venus-mars text-danger" aria-hidden="true"></i></span>
+                               <select name="Gender" id="Gender" class="form-select">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                               </select>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- Email,current address,age -->
+                    <div class="row">
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                            <label for="Email" class="mb-2">Email*</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa fa-envelope text-danger" aria-hidden="true"></i></span>
+                                <input type="email" class="form-control" placeholder="Enter Email" id="Email">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                                <label for="Address" class="mb-2">Current Address*</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa fa-home text-danger" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Current Address" id="Address">
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                                <label for="Age" class="mb-2">Age*</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2-date-fill text-danger" viewBox="0 0 16 16">
+                                        <path d="M9.402 10.246c.625 0 1.184-.484 1.184-1.18 0-.832-.527-1.23-1.16-1.23-.586 0-1.168.387-1.168 1.21 0 .817.543 1.2 1.144 1.2"/>
+                                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5m9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5m-4.118 9.79c1.258 0 2-1.067 2-2.872 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684c.047.64.594 1.406 1.703 1.406zm-2.89-5.435h-.633A13 13 0 0 0 4.5 8.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675V7.354z"/>
+                                      </svg></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Age" id="Age">
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- Contuctnumber,profile photo -->
+                    <div class="row">
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                            <label for="Contuct Number" class="mb-2">Contuct Number*</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa fa-phone text-danger" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Contuct Number" id="Contuct Number">
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8 g-3 mb-4 mt-0">
+                            <div>
+                            <label for="Photo" class="mb-2">Profile Photo*</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa fa-camera text-danger" aria-hidden="true"></i></span>
+                                <input type="file" class="form-control" placeholder="photo" id="Photo">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- height,blood Group , pulse -->
+                    <div class="row">
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                            <label for="Height" class="mb-2">Height </label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa fa-ruler text-danger" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Height" id="Height ">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                                <label for="blood" class="mb-2">Blood Groop</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa fa-tint text-danger" aria-hidden="true"></i></span>
+                                    <select name="Blood" id="blood" class="form-select">
+                                        <option value="A+">A+</option>
+                                        <option value="A+">A-</option>
+                                        <option value="A+">B+</option>
+                                        <option value="A+">B-</option>
+                                        <option value="A+">O+</option>
+                                        <option value="A+">O-</option>
+                                        <option value="A+">AB+</option>
+                                        <option value="A+">AB-</option>
+                                    </select>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                            <label for="pulsepulse" class="mb-2">pulse*</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa fa-heartbeat text-danger" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter pulse rate" id="pulse ">
+                            </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- allergy,weight,blood pressure -->
+                    <div class="row">
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                            <label for="Allergy" class="mb-2">Allergy*</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-hand text-danger"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Allergy Details" id="Allergy ">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                            <label for="Weight" class="mb-2">Weight*</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa fa-weight text-danger" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Weight " id="Weight ">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                            <label for="pressure" class="mb-2">Blood pressure*</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa fa-tachometer-alt text-danger" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Blood pressure " id="pressure ">
+                            </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- respiration,deit,Additional info -->
+                    <div class="row">
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                            <label for="Respiration" class="mb-2">Respiration*</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-lungs text-danger"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Respiration rate" id="Allergy ">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                            <label for="Deit" class="mb-2">Deit*</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa fa-cutlery text-danger" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" placeholder="Vegetarain " id="Deit ">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 g-3 mb-4 mt-0">
+                            <div>
+                            <label for="pressure" class="mb-2">Additional Info*</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa fa-info-circle text-danger" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Blood pressure " id="pressure ">
+                            </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- buttons -->
+                    <div class="row">
+                        <div class="col-md-3 mt-3 g-3">
+                            <button type="button" class="btn btn-success w-100">save <i class="fas fa-save"></i></button>
+                        </div>
+                        <div class="col-md-3 mt-3 g-3">
+                            <button type="button" class="btn btn-danger w-100">Delete <i class="fa fa-trash"></i></button>
+                        </div>
+                        <div class="col-md-3 mt-3 g-3">
+                            <button type="button" class="btn btn-warning w-100">update <i class="fas fa-pen"></i></button>
+                        </div>
+                        <div class="col-md-3 mt-3 g-3">
+                            <button type="button" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+
+</html>
