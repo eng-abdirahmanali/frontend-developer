@@ -36,8 +36,8 @@ A dashboard  Related to hosbital webpage that contains
 - patientlist
 - profile
 - reciever
-- login .
-that uses HTML , Bootstrab and CSS.
+- login
+.that uses HTML , Bootstrab and CSS.
 [Click here to view Project 5](https://github.com/eng-abdirahmanali/frontend-developer/tree/main/city-cot-inivation-hub/project-five)
 
 ---
