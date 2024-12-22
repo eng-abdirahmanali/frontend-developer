@@ -11,7 +11,7 @@ A student enrollment webpage that contains tables, input text boxes. Built using
 [Click here to view Project 1](https://github.com/eng-abdirahmanali/frontend-developer/tree/main/city-cot-inivation-hub/project-one)
 
 ### Project 2:
-- A navbar and cards that uses HTML and CSS. 
+A navbar and cards that uses HTML and CSS. 
 [Click here to view Project 2](https://github.com/eng-abdirahmanali/frontend-developer/tree/main/city-cot-inivation-hub/project-two)
 
 ### Project 3:
@@ -24,7 +24,7 @@ A simple webpage that includes:
 A dashboard school webpage that contains 
 - Fucalty
 - Student
--  Bill
+-  Bill .
 that uses HTML , Bootstrab and CSS.
 [Click here to view Project 4](https://github.com/eng-abdirahmanali/frontend-developer/tree/main/city-cot-inivation-hub/project-four)
 
@@ -36,8 +36,8 @@ A dashboard  Related to hosbital webpage that contains
 - patientlist
 - profile
 - reciever
-- login
- that uses HTML , Bootstrab and CSS.
+- login .
+that uses HTML , Bootstrab and CSS.
 [Click here to view Project 5](https://github.com/eng-abdirahmanali/frontend-developer/tree/main/city-cot-inivation-hub/project-five)
 
 ---
