@@ -1,0 +1,123 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.container-fluid {
+    height: 102vh;
+}
+.colom1{
+    height: 100vh;
+   
+
+}
+.colom4{
+    height: 7vh;
+    color: white;
+}
+.colom2{
+    height: 10vh;
+    border-bottom: 1px solid black;
+    
+}
+.colom3{
+    height: 85vh;
+    
+}
+.logos {
+    display: flex;
+    flex-direction: column;
+}
+.logo a{
+   text-decoration: none;
+   color:white;
+
+}
+.accordion-button:not(.collapsed) .rotate-icon {
+    transform: rotate(180deg); /* Marka la ballaariyay */
+  }
+  .rotate-icon {
+    transition: transform 0.3s ease-in-out; /* Si tartiib ah isu beddel */
+  }
+
+  .nab {
+    flex-direction: column;
+    display: flex;
+  width: 100%;
+  justify-self: center;
+  }
+ 
+.but span svg{
+    position: absolute;
+    right: 0;
+  }
+.balac {
+    width: 100%;
+}
+.space {
+    gap:100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 916px) {
+    .cali{
+        visibility: hidden;
+    }
+    .saciid {
+        position: fixed;
+        
+    }
+
+}
+.frame a {
+    text-decoration: none;
+    color: white;
+}
+.frames a{
+    text-decoration: none;
+    color: black;
+}
+.login {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    background-color: blanchedalmond;
+    width: 400px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.sawir {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+input {
+  
+    width: 90%;
+    border: none;
+    border-radius: .3em;
+    margin-left: 1em;
+}
+.im img {
+    border-radius: 50%;
+    margin-top: 0;
+    margin-left: .4em;
+}
